@@ -1,0 +1,9 @@
+{
+  "title": "Simple Interface Script",
+  "interfaces": [
+    {
+      "script": "interface-script.js",
+      "args": ""
+    }
+  ]
+}

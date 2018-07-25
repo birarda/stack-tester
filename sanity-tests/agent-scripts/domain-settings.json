@@ -1,0 +1,12 @@
+{
+    "paths": {
+        "/": {
+            "viewpoint": "/0,-10,0/0,-0.708837,0,0.705372"
+        }
+    },
+    "version": 2.2,
+    "wizard": {
+        "completed_once": true,
+        "steps_completed": 0
+    }
+}

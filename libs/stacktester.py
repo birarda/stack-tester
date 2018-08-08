@@ -94,7 +94,7 @@ class StackTester:
                     map(lambda x: pathlib.PosixPath(x) in list(pathlib.Path(test_file).parents), self.tests))
 
             if os.path.isfile(test_file) and valid:
-                print("Runing: {}".format(os.path.relpath(current_dir, self.root_dir)))
+                print("Running: {}".format(os.path.relpath(current_dir, self.root_dir)))
 
                 self.test_stack.push(getJSONFromFile(test_file))
                 self.runTest(dirpath)

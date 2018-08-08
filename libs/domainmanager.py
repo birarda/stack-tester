@@ -207,6 +207,14 @@ class DomainManager:
 
             except subprocess.TimeoutExpired:
                 proc.kill()
+
+                if self.verbose >= 2:
+                    outs, errs = proc.communicate()
+
+                    print(proc.args)
+                    print(outs)
+                    print(errs)
+
                 failed("{} - timeout".format(self.test['title']))
             except Exception as err:
                 proc.kill()

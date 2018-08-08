@@ -16,8 +16,8 @@ def process_arguments():
     return parser.parse_args()
 
 def main():
-    if sys.version_info[0] < 3:
-        raise Exception("Must be using Python 3")
+    if sys.version_info[0] < 3 or (sys.version_info[0] == 3 and sys.version_info[1] < 7):
+        raise Exception("Must be using Python 3.7")
 
     # Process arguments
     args = process_arguments()
